@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="container bg-dark">
+  <div class="bg-white">
+    <header>
+      <div class="nav-box">
+        <a class="nav-link" href="../index.html">Home Page</a>
+        <a class="nav-link" href="articles.html">Articles</a>
+        <a class="nav-link" href="catalog.html">Catalog</a>
+        <a class="nav-link" href="contacts.html">Contacts</a>
+        <a class="nav-link" href="gallery.html">Gallery</a>
+        <a class="nav-link" href="page-nav.html">Page-nav</a>
+        <a class="nav-link" href="registration.html">Registration</a>
+      </div>
+    </header>
+
+    <main class="main">
+
+      <h1 class="title-registration">Registration</h1>
+
+      <form action="https://tests.fomenko.top/echo/index.php" method="get">
+
+        <fieldset>
+          <legend>lastame/Name</legend>
+
+          <div class="form-element">
+            <label for="lastname">Lastname</label>
+            <input class="capitalized" type="text" id="lastname" name="lastame" placeholder="Enter your lastname">
+          </div>
+
+          <div class="form-element">
+            <label for="name">Name</label>
+            <input class="capitalized" type="text" id="name" name="name" placeholder="Enter your name">
+          </div>
+
+          <div class="form-element">
+            <label for="date">Date of Birth</label>
+            <input type="date" id="date" name="date-of-birth">
+          </div>
+
+          <div class="form-element">
+            <label for="photo">Your photo</label>
+            <input type="file" id="photo" name="photo">
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Gender</legend>
+          <div class="form-element-box-radio">
+            <p class="title-form">Enter your gender:</p>
+            <div class="form-element radio">
+              <input type="radio" id="man" name="man">
+              <label for="man">Man</label>
+            </div>
+
+            <div class="form-element radio">
+              <input type="radio" id="woman" name="woman">
+              <label for="woman">Woman</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Other information</legend>
+
+          <div class="form-element">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your Email">
+          </div>
+
+
+          <div class="form-element">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password">
+          </div>
+
+          <div class="form-element">
+            <label for="site">Site</label>
+            <input type="url" id="site" name="site" placeholder="Enter your site">
+          </div>
+
+          <div class="form-element-checkbox-box">
+            <p>Enter your kitchen:</p>
+            <div class="form-element-checkbox">
+              <input type="checkbox" id="ua" name="ua">
+              <label for="ua">UA</label>
+            </div>
+
+            <div class="form-element-checkbox">
+              <input type="checkbox" id="ru" name="ru">
+              <label for="ru">RU</label>
+            </div>
+
+            <div class="form-element-checkbox">
+              <input type="checkbox" id="kz" name="kz">
+              <label for="kz">KZ</label>
+            </div>
+
+            <div class="form-element-checkbox">
+              <input type="checkbox" id="gb" name="gb">
+              <label for="gb">GB</label>
+            </div>
+
+            <div class="form-element-checkbox">
+              <input type="checkbox" id="bg" name="bg">
+              <label for="bg">BG</label>
+            </div>
+          </div>
+
+          <div class="form-element">
+            <p>Description</p>
+            <textarea name="text" id="text" cols="100" rows="5"></textarea>
+          </div>
+
+          <div class="batton-box">
+            <input class="batton-submit" type="submit" value="Submit">
+            <input class="batton-reset" type="reset" value="Reset">
+          </div>
+        </fieldset>
+      </form>
+    </main>
+
+    <footer class="footer-box">
+      <p class="footer-txt">&copy; Evgeniy</p>
+    </footer>
+  </div>
+</body>
+
+</html>
